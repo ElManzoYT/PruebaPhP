@@ -19,7 +19,6 @@
                         <form method="POST" action="{{ route('indicadore.update', $indicadore->id) }}"  role="form" enctype="multipart/form-data">
                             {{ method_field('PATCH') }}
                             @csrf
-
                             @include('indicadore.form')
 
                         </form>

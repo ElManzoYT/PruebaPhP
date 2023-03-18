@@ -48,7 +48,7 @@ class IndicadoreController extends Controller
         $indicadore = Indicadore::create($request->all());
 
         return redirect()->route('indicadore.index')
-            ->with('success', 'Indicadore created successfully.');
+            ->with('success', 'El Nuevo Indicador a sido creado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class IndicadoreController extends Controller
         $indicadore->update($request->all());
 
         return redirect()->route('indicadore.index')
-            ->with('success', 'Indicadore updated successfully');
+            ->with('success', 'Los datos del Indicador han sido actualizados con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class IndicadoreController extends Controller
         $indicadore = Indicadore::find($id)->delete();
 
         return redirect()->route('indicadore.index')
-            ->with('success', 'Indicadore deleted successfully');
+            ->with('success', 'El Indicador a sido Eliminado con exito');
     }
 }
